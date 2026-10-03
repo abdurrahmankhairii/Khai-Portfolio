@@ -1,4 +1,4 @@
-export interface Project {
+﻿export interface Project {
   id: string;
   title: string;
   description: string;
@@ -13,8 +13,58 @@ export interface Project {
 
 export const projects: Project[] = [
   {
+    id: "ptw-system",
+    title: "Permit To Work (PTW) System",
+    description: "Digitalized safety authorization and hierarchical approval platform.",
+    longDescription: "Architected a scalable ASP.NET Core MVC application to digitalize the Permit To Work authorization process at PT. Mattel Indonesia. Features comprehensive role-based access control, hierarchical approval workflows, and dynamic PDF export generation using Rotativa.",
+    techStack: ["C#", "ASP.NET Core 8", "EF Core", "SQL Server", "Rotativa"],
+    category: "Full-Stack / Enterprise",
+    image: "/images/projects/ptw-system.png",
+    featured: true,
+  },
+  {
+    id: "safety-patrol",
+    title: "Safety Patrol V2.2",
+    description: "Safety compliance tracking with automated PowerPoint reporting.",
+    longDescription: "Developed a centralized compliance tracking web application for the EHS department at PT. Mattel Indonesia. Features dynamic assessment workflows, photo evidence uploads, real-time safety score calculation, and auto-generated PowerPoint presentation reports via OpenXML SDK.",
+    techStack: ["C#", "ASP.NET MVC 5", "SQL Server", "OpenXML SDK"],
+    category: "Full-Stack / Enterprise",
+    image: "/images/projects/safety-patrol.png",
+    featured: true,
+  },
+  {
+    id: "near-miss-system",
+    title: "Near Miss System",
+    description: "Centralized incident reporting platform with Gemini AI automation.",
+    longDescription: "Architected and delivered a centralized incident reporting platform deployed company-wide at PT Mattel Indonesia. Connected Google Gemini to read submitted reports and automatically generate safety recommendations and corrective actions. Implemented TF-IDF based classification to automatically sort incoming reports into correct incident categories.",
+    techStack: ["C#", ".NET", "SQL Server", "Gemini AI", "Python", "TF-IDF"],
+    category: "Full-Stack / AI",
+    image: "/images/projects/near-miss-system.png",
+    featured: true,
+  },
+  {
+    id: "emesys",
+    title: "EMESYS - Emergency Equipment System",
+    description: "Enterprise web application for emergency equipment management and field inspections.",
+    longDescription: "Built a full ASP.NET and SQL Server web application from scratch to replace a legacy Power Apps system. Covers equipment registration, inspection scheduling, certification tracking, and fire alarm categorization. Features QR code generation, mobile scanning for field inspections, automated Excel export, and email reporting.",
+    techStack: ["C#", "ASP.NET MVC", "SQL Server", "QR Code", "Excel Interop"],
+    category: "Full-Stack / Enterprise",
+    image: "/images/projects/emesys.png",
+    featured: true,
+  },
+  {
+    id: "auditlens",
+    title: "5x5 AuditLens",
+    description: "Comprehensive EHS audit management platform with automated scoring.",
+    longDescription: "Built an MVC ASP.NET and SQL Server web application giving compliance auditors at PT Mattel Indonesia one centralized platform to plan, execute, and track 5x5 EHS audits. Includes authentication, user management, audit workflows, automated score calculation, evidence uploads, reporting, and role-based access control.",
+    techStack: ["C#", "ASP.NET MVC", "SQL Server", "RBAC"],
+    category: "Full-Stack / Enterprise",
+    image: "/images/projects/auditlens.png",
+    featured: true,
+  },
+  {
     id: "perisai",
-    title: "PERISAI — Pertamina Safety AI",
+    title: "PERISAI â€” Pertamina Safety AI",
     description: "AI-powered gate monitoring system for operational safety at Pertamina oil fields.",
     longDescription: "Real-time identity verification & PPE detection system using computer vision. Monitors worker safety compliance with YOLOv10m for PPE detection and InsightFace for face recognition. Features real-time dashboard with WebSocket, automated email notifications, and weekly/monthly safety reports.",
     techStack: ["Python", "FastAPI", "Next.js 15", "YOLOv10m", "InsightFace", "PostgreSQL", "Docker", "WebSocket"],
@@ -47,7 +97,7 @@ export const projects: Project[] = [
   },
   {
     id: "tiktok-analyzer",
-    title: "Pluto Mecha AI — Social Media Analyzer",
+    title: "Pluto Mecha AI â€” Social Media Analyzer",
     description: "Social media sentiment analysis platform for strategic brand insights.",
     longDescription: "Scalable backend for sentiment analysis enabling brands to derive actionable insights from TikTok content. Powered by Gemini 2.0 Flash for intelligent analysis and Apify for data scraping.",
     techStack: ["FastAPI", "Python", "Gemini 2.0 Flash", "React", "Vite", "Tailwind CSS", "Apify"],
@@ -69,7 +119,7 @@ export const projects: Project[] = [
   },
   {
     id: "medbot",
-    title: "MedBot — Medical QA System",
+    title: "MedBot â€” Medical QA System",
     description: "Medical question-answering chatbot fine-tuned with BioBERT and RoBERTa.",
     longDescription: "Fine-tuned BioBERT and RoBERTa models on the BioASQ dataset for accurate medical question answering. Features a Streamlit-based interactive chatbot interface for real-time medical queries.",
     techStack: ["Python", "BioBERT", "RoBERTa", "Streamlit", "Transformers", "BioASQ"],
@@ -91,7 +141,7 @@ export const projects: Project[] = [
   },
   {
     id: "web-token-utility",
-    title: "Portal Utilitas — Token Utility",
+    title: "Portal Utilitas â€” Token Utility",
     description: "Utility token management platform for electricity & water with admin dashboard.",
     longDescription: "Complete platform for managing and purchasing utility tokens (electricity & water) with interactive usage charts, payment simulation (Bank Transfer/QRIS), admin panel for customer management, and comprehensive audit logging.",
     techStack: ["React", "Vite", "Node.js", "Express", "PostgreSQL", "Tailwind CSS", "Chart.js"],
@@ -101,3 +151,5 @@ export const projects: Project[] = [
     featured: true,
   },
 ];
+
+
