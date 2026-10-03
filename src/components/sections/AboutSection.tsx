@@ -7,7 +7,7 @@ import { Brain, Code, Eye } from "lucide-react";
 
 const stats = [
   { end: 10, suffix: "+", label: "Projects Completed" },
-  { end: 3.95, decimals: 2, label: "GPA" },
+  { end: 3.96, decimals: 2, label: "GPA" },
   { end: 4, suffix: "+", label: "Work Experiences" },
   { end: 2, label: "Hackathon Wins" },
 ];
@@ -23,13 +23,13 @@ const focuses = [
     icon: Code,
     title: "Full-Stack Development",
     description:
-      "Building scalable web applications with modern frameworks, microservices, and clean architecture.",
+      "Building scalable enterprise web applications with modern frameworks, C#/.NET, and clean architecture.",
   },
   {
     icon: Eye,
-    title: "Computer Vision",
+    title: "Digital Transformation",
     description:
-      "Creating real-time detection systems for safety compliance, emotion recognition, and image processing.",
+      "Modernizing legacy systems, managing IT/OT infrastructure, and automating workflows for operational efficiency.",
   },
 ];
 
@@ -39,20 +39,17 @@ export function AboutSection() {
       <div className="max-w-6xl mx-auto">
         <SectionHeading
           title="About Me"
-          subtitle="A passionate Informatics student specializing in Artificial Intelligence"
+          subtitle="Full-Stack Engineer driving digital transformation in manufacturing and enterprise operations"
         />
 
         <ScrollReveal>
           <GlassCard variant="strong" className="max-w-4xl mx-auto mb-16 p-8">
             <p className="text-slate-300 text-lg leading-relaxed">
-              I&apos;m a 7th-semester Informatics student at President University
-              specializing in AI with a proven track record of designing and
-              implementing robust technology solutions. My experience is centered
-              on enhancing operational efficiency and EHS compliance through
-              practical applications of machine learning and computer vision. I am
-              a quick learner and an analytical problem-solver, comfortable with
-              full-stack development principles, database management, and modern
-              DevOps practices.
+              Full Stack Engineer with direct experience driving digital transformation in manufacturing environments. 
+              Currently leading the replacement of legacy Power Apps workflows with production-grade C#/.NET and SQL Server web applications at PT Mattel Indonesia, 
+              supporting EHS and compliance operations across the factory floor. Skilled at integrating new digital tools into existing processes with minimal disruption, 
+              training non-technical users on new systems, and managing a portfolio of 20+ internal applications and Power BI dashboards. 
+              Background includes IT/OT infrastructure support in oil and gas operations and hands-on work with AI, Docker, and modern web frameworks.
             </p>
           </GlassCard>
         </ScrollReveal>
