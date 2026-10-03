@@ -1,4 +1,4 @@
-export interface Experience {
+﻿export interface Experience {
   id: string;
   company: string;
   role: string;
@@ -11,10 +11,24 @@ export interface Experience {
 
 export const workExperiences: Experience[] = [
   {
+    id: "mattel",
+    company: "PT. Mattel Indonesia",
+    role: "Full Stack - Digital Transformation Internship",
+    period: "Dec 2025 - Present",
+    location: "Bekasi, Indonesia",
+    logo: "/images/experience/mattel-logo.png",
+    description: [
+      "Developed and maintained internal web applications in C# and .NET backed by SQL Server, supporting the daily operations of the EHS and Compliance Assurance division with 1000+ daily active users.",
+      "Managed and optimized a digital ecosystem consisting of 20+ Web Apps and Power BI dashboards, utilizing Power Automate and Power Apps.",
+      "Responsible for the end-to-end maintenance and troubleshooting of all digital compliance projects, ensuring high availability.",
+    ],
+    type: "work",
+  },
+  {
     id: "pertamina",
     company: "PT. Pertamina EP Cepu",
     role: "IT Operations Internship",
-    period: "Aug 2025 — Nov 2025",
+    period: "Aug 2025 â€” Nov 2025",
     location: "Tuban, Indonesia",
     logo: "/images/experience/pertamina-logo.png",
     description: [
@@ -27,13 +41,13 @@ export const workExperiences: Experience[] = [
   {
     id: "prc-capital",
     company: "President Research Center (PRC)",
-    role: "Research Assistant — Capital Market",
-    period: "Jan 2024 — Jun 2024",
+    role: "Research Assistant â€” Capital Market",
+    period: "Jan 2024 â€” Jun 2024",
     location: "Cikarang, Indonesia",
     logo: "/images/experience/prc-logo.png",
     description: [
       "Analyzed 14 years of stock performance data for 7 companies using Excel, delivering actionable insights for risk assessment.",
-      "Evaluated monthly investment scenarios (1–2M IDR) to calculate dividend gains and trends, supporting strategic decision-making.",
+      "Evaluated monthly investment scenarios (1â€“2M IDR) to calculate dividend gains and trends, supporting strategic decision-making.",
       "Prepared statistical content reports and documented project progress for stakeholder reviews.",
     ],
     type: "work",
@@ -41,8 +55,8 @@ export const workExperiences: Experience[] = [
   {
     id: "prc-vr",
     company: "President Research Center (PRC)",
-    role: "Research Assistant — VR Development",
-    period: "Oct 2023 — Dec 2023",
+    role: "Research Assistant â€” VR Development",
+    period: "Oct 2023 â€” Dec 2023",
     location: "Cikarang, Indonesia",
     logo: "/images/experience/prc-logo.png",
     description: [
@@ -55,7 +69,7 @@ export const workExperiences: Experience[] = [
     id: "bps",
     company: "Badan Pusat Statistik (BPS)",
     role: "GIS Specialist (Freelance)",
-    period: "Mar 2021 — Jun 2021",
+    period: "Mar 2021 â€” Jun 2021",
     location: "Bojonegoro, Indonesia",
     logo: "/images/experience/bps-logo.png",
     description: [
@@ -70,9 +84,9 @@ export const workExperiences: Experience[] = [
 export const leadershipExperiences: Experience[] = [
   {
     id: "hima",
-    company: "HIMA Informatics — President University",
+    company: "HIMA Informatics â€” President University",
     role: "Chairperson",
-    period: "Oct 2024 — Sep 2025",
+    period: "Oct 2024 â€” Sep 2025",
     location: "Cikarang, Indonesia",
     logo: "/images/education/president-university.png",
     description: [
@@ -99,7 +113,7 @@ export const leadershipExperiences: Experience[] = [
     id: "pm-itbca",
     company: "Company Visit IT x IS Goes to ITBCA",
     role: "Project Manager",
-    period: "Nov 2023 — Apr 2024",
+    period: "Nov 2023 â€” Apr 2024",
     location: "Indonesia",
     logo: "/images/education/president-university.png",
     description: [
@@ -110,3 +124,4 @@ export const leadershipExperiences: Experience[] = [
     type: "leadership",
   },
 ];
+
