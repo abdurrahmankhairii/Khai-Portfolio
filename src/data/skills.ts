@@ -1,5 +1,6 @@
-import { SiPython, SiTypescript, SiJavascript, SiCplusplus, SiPhp, SiHtml5, SiCss, SiTensorflow, SiScikitlearn, SiOpencv, SiReact, SiNextdotjs, SiTailwindcss, SiFastapi, SiNodedotjs, SiExpress, SiGo, SiPostgresql, SiMysql, SiSqlite, SiRedis, SiDocker, SiGit, SiNginx, SiFigma, SiQgis, SiKeras, SiStreamlit, SiVite } from "react-icons/si";
-import { FaJava } from "react-icons/fa";
+import { SiPython, SiTypescript, SiDotnet, SiJavascript, SiCplusplus, SiPhp, SiHtml5, SiCss, SiTensorflow, SiScikitlearn, SiOpencv, SiReact, SiNextdotjs, SiTailwindcss, SiFastapi, SiNodedotjs, SiExpress, SiGo, SiPostgresql, SiMysql, SiSqlite, SiRedis, SiDocker, SiGit, SiNginx, SiFigma, SiQgis, SiKeras, SiStreamlit, SiVite } from "react-icons/si";
+import { FaJava, FaMicrosoft } from "react-icons/fa";
+import { TbBrandCSharp, TbSql } from "react-icons/tb";
 import { type IconType } from "react-icons";
 
 export interface Skill {
@@ -27,6 +28,7 @@ export const skills: Skill[] = [
   { name: "JavaScript", icon: SiJavascript, category: "Languages" },
   { name: "Java", icon: FaJava, category: "Languages" },
   { name: "C++", icon: SiCplusplus, category: "Languages" },
+  { name: "C#", icon: TbBrandCSharp, category: "Languages" },
   { name: "PHP", icon: SiPhp, category: "Languages" },
   { name: "HTML5", icon: SiHtml5, category: "Languages" },
   { name: "CSS3", icon: SiCss, category: "Languages" },
@@ -46,8 +48,10 @@ export const skills: Skill[] = [
   { name: "Node.js", icon: SiNodedotjs, category: "Backend" },
   { name: "Express", icon: SiExpress, category: "Backend" },
   { name: "Golang", icon: SiGo, category: "Backend" },
+  { name: ".NET", icon: SiDotnet, category: "Backend" },
   // Database
   { name: "PostgreSQL", icon: SiPostgresql, category: "Database" },
+  { name: "SQL Server", icon: TbSql, category: "Database" },
   { name: "MySQL", icon: SiMysql, category: "Database" },
   { name: "SQLite", icon: SiSqlite, category: "Database" },
   { name: "Redis", icon: SiRedis, category: "Database" },
@@ -56,5 +60,8 @@ export const skills: Skill[] = [
   { name: "Git", icon: SiGit, category: "DevOps & Tools" },
   { name: "Nginx", icon: SiNginx, category: "DevOps & Tools" },
   { name: "Figma", icon: SiFigma, category: "DevOps & Tools" },
+  { name: "Power BI", icon: FaMicrosoft, category: "DevOps & Tools" },
+  { name: "Power Apps", icon: FaMicrosoft, category: "DevOps & Tools" },
   { name: "QGIS", icon: SiQgis, category: "DevOps & Tools" },
 ];
+
