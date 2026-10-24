@@ -1,4 +1,3 @@
-version: '3.8'
 
 services:
   portfolio:
@@ -7,6 +6,8 @@ services:
       dockerfile: Dockerfile
     ports:
       - "3005:3000"
+    volumes:
+      - ./public:/app/public
     environment:
       - NODE_ENV=production
     restart: unless-stopped
