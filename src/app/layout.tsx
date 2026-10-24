@@ -10,7 +10,7 @@ const inter = Inter({
 export const metadata: Metadata = {
   title: "Abdurrahman Khairi — AI Engineer & Full-Stack Developer",
   description:
-    "Portfolio of Abdurrahman Khairi — AI Engineer & Full-Stack Developer specializing in computer vision, deep learning, and modern web development. President University, GPA 3.95.",
+    "Portfolio of Abdurrahman Khairi — AI Engineer & Full-Stack Developer specializing in computer vision, deep learning, and modern web development. President University, GPA 3.97.",
   keywords: [
     "Abdurrahman Khairi",
     "AI Engineer",
