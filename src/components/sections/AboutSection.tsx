@@ -7,7 +7,7 @@ import { Brain, Code, Eye } from "lucide-react";
 
 const stats = [
   { end: 10, suffix: "+", label: "Projects Completed" },
-  { end: 3.96, decimals: 2, label: "GPA" },
+  { end: 3.97, decimals: 2, label: "GPA" },
   { end: 4, suffix: "+", label: "Work Experiences" },
   { end: 2, label: "Hackathon Wins" },
 ];
