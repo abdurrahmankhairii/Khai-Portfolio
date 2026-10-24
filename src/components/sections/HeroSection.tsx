@@ -86,38 +86,43 @@ export function HeroSection() {
 
         {/* Right - Photo */}
         <motion.div
-          className="flex justify-center"
+          className="flex justify-center items-end mt-12 md:mt-0"
           initial={{ opacity: 0, scale: 0.8 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 0.8, delay: 0.2 }}
         >
-          <div className="relative">
+          <div className="relative w-64 h-64 md:w-80 md:h-80 flex justify-center items-end">
             {/* Glow ring */}
             <div className="absolute inset-0 rounded-full bg-gradient-to-r from-blue-500/30 to-indigo-500/30 blur-2xl scale-110" />
-            {/* Photo container */}
-            <div className="relative w-64 h-64 md:w-80 md:h-80 rounded-full overflow-hidden border-2 border-blue-400/30 glow">
+            
+            {/* The Circle (Background & Border) */}
+            <div className="absolute inset-0 rounded-full border-2 border-blue-400/30 glow bg-gradient-to-b from-blue-900/20 to-transparent" />
+            
+            {/* Photo container (pop-out top, clipped at bottom exactly matching the circle) */}
+            <div className="absolute bottom-0 w-full h-[125%] z-10 pointer-events-none rounded-b-full overflow-hidden">
               <Image
-                src="/images/profile/profile-photo.jpg"
+                src="/images/profile/profile-photo.png"
                 alt="Abdurrahman Khairi"
                 fill
-                className="object-cover"
+                className="object-contain object-bottom drop-shadow-2xl"
                 priority
               />
             </div>
-            {/* Floating badges */}
+            
+            {/* Floating badges (Higher z-index) */}
             <motion.div
-              className="absolute -right-4 top-8 glass-strong rounded-xl px-3 py-2 text-sm"
+              className="absolute -right-4 top-12 glass-strong rounded-xl px-3 py-2 text-sm z-20"
               animate={{ y: [0, -8, 0] }}
               transition={{ duration: 3, repeat: Infinity, ease: "easeInOut" }}
             >
               🏆 Hackathon Winner
             </motion.div>
             <motion.div
-              className="absolute -left-4 bottom-12 glass-strong rounded-xl px-3 py-2 text-sm"
+              className="absolute -left-8 bottom-12 glass-strong rounded-xl px-3 py-2 text-sm z-20"
               animate={{ y: [0, 8, 0] }}
               transition={{ duration: 3.5, repeat: Infinity, ease: "easeInOut" }}
             >
-              🎓 GPA 3.95
+              🎓 GPA 3.97
             </motion.div>
           </div>
         </motion.div>
