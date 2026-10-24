@@ -6,6 +6,8 @@ export interface Achievement {
   description: string;
   image?: string;
   icon: "trophy" | "award" | "star";
+  attachment?: string;
+  attachmentLabel?: string;
 }
 
 export const achievements: Achievement[] = [
@@ -17,6 +19,8 @@ export const achievements: Achievement[] = [
     description: "Won first place at an international hackathon with HeartLink, a health-focused application designed to improve community healthcare access.",
     image: "/images/achievements/hackathon-beachhack.jpg",
     icon: "trophy",
+    attachment: "/attachments/beachhack-certificate.pdf",
+    attachmentLabel: "View Certificate",
   },
   {
     id: "goldencode",
@@ -26,5 +30,7 @@ export const achievements: Achievement[] = [
     description: "Awarded Best Teamwork for developing an AI-powered Fashion Assistant application at the Golden Code International Hackathon.",
     image: "/images/achievements/hackathon-goldencode.jpg",
     icon: "award",
+    attachment: "/attachments/goldencode-certificate.pdf",
+    attachmentLabel: "View Certificate",
   },
 ];
