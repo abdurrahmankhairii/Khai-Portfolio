@@ -1,3 +1,12 @@
+// ============================================================================
+// Copyright (c) 2026 Abdurrahman Khairi. All Rights Reserved.
+// Personal Software Engineering & AI Portfolio (Khai-Portfolio).
+// Unauthorized commercial use, redistribution, or cloning is prohibited.
+// ============================================================================
+
+// Feature: Multi-Format Project Image Fallback — Purpose: Automatically resolves .png, .jpg, .jpeg, and .webp project screenshots.
+// OOP: Encapsulated Media Presentation Component — Connected To: Used by ProjectCard.tsx and ProjectGalleryModal.tsx.
+
 "use client";
 import { useState, useEffect } from "react";
 import Image from "next/image";
@@ -23,7 +32,8 @@ export function SmartProjectImage({
 }: SmartProjectImageProps) {
   const [extIndex, setExtIndex] = useState(0);
 
-  // If src changes (e.g., navigating to next photo in album), reset extension index
+  // Feature: Source Path Sync — Purpose: Resets extension fallback index whenever a new image path is passed.
+  // OOP: Lifecycle Effect Hook — Connected To: Watches src prop inside SmartProjectImage.
   useEffect(() => {
     setExtIndex(0);
   }, [src]);
