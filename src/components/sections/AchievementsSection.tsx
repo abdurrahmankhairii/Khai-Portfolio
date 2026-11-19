@@ -1,3 +1,12 @@
+// ============================================================================
+// Copyright (c) 2026 Abdurrahman Khairi. All Rights Reserved.
+// Personal Software Engineering & AI Portfolio (Khai-Portfolio).
+// Unauthorized commercial use, redistribution, or cloning is prohibited.
+// ============================================================================
+
+// Feature: Achievements & Leadership Section — Purpose: Displays competition awards and organizational leadership with direct proof links.
+// OOP: Encapsulated Presentation Component — Connected To: Rendered by src/app/page.tsx, consumes achievements.ts and experience.ts.
+
 "use client";
 import { SectionHeading } from "@/components/ui/SectionHeading";
 import { GlassCard } from "@/components/ui/GlassCard";
@@ -5,7 +14,7 @@ import { ScrollReveal } from "@/components/ui/ScrollReveal";
 import { TimelineItem } from "@/components/ui/TimelineItem";
 import { achievements } from "@/data/achievements";
 import { leadershipExperiences } from "@/data/experience";
-import { Trophy, Award, Star, Users } from "lucide-react";
+import { Trophy, Award, Star, Users, FileCheck2 } from "lucide-react";
 import { motion } from "framer-motion";
 
 const iconMap = {
@@ -20,7 +29,7 @@ export function AchievementsSection() {
       <div className="max-w-6xl mx-auto">
         <SectionHeading
           title="Achievements & Leadership"
-          subtitle="Competition wins and organizational contributions"
+          subtitle="International hackathon awards and student organization leadership"
         />
 
         {/* Competition Achievements */}
@@ -28,36 +37,34 @@ export function AchievementsSection() {
           {achievements.map((achievement, index) => {
             const Icon = iconMap[achievement.icon];
             return (
-              <ScrollReveal key={achievement.id} delay={index * 0.15}>
-                <GlassCard variant="hover" className="h-full">
+              <ScrollReveal key={achievement.id} delay={index * 0.1}>
+                <GlassCard variant="hover" className="h-full flex flex-col justify-between">
                   <div className="flex items-start gap-4">
-                    <div className="w-12 h-12 rounded-2xl bg-yellow-500/10 flex items-center justify-center shrink-0">
-                      <Icon className="w-6 h-6 text-yellow-400" />
+                    <div className="w-12 h-12 rounded-xl bg-amber-500/15 border border-amber-400/25 flex items-center justify-center shrink-0">
+                      <Icon className="w-6 h-6 text-amber-400" />
                     </div>
-                    <div>
-                      <h3 className="font-bold text-white mb-1">
+                    <div className="flex-1">
+                      <h3 className="font-bold text-white text-lg mb-1">
                         {achievement.title}
                       </h3>
-                      <p className="text-blue-300 text-sm mb-1">
+                      <p className="text-sky-300 text-sm font-medium mb-1">
                         {achievement.event}
                       </p>
-                      <p className="text-slate-500 text-xs mb-3">
+                      <p className="text-slate-400 text-xs mb-3">
                         {achievement.date}
                       </p>
-                      <p className="text-sm text-slate-400 mb-4">
+                      <p className="text-sm text-slate-300 leading-relaxed mb-4">
                         {achievement.description}
                       </p>
-                      {achievement.attachment && (
-                        <a
-                          href={achievement.attachment}
-                          target="_blank"
-                          rel="noopener noreferrer"
-                          className="inline-flex items-center gap-2 px-3 py-1.5 rounded bg-yellow-500/10 hover:bg-yellow-500/20 border border-yellow-500/30 text-yellow-400 text-xs font-semibold transition-all"
-                        >
-                          <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
-                          {achievement.attachmentLabel || "View Certificate"}
-                        </a>
-                      )}
+                      <a
+                        href={achievement.attachment}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="inline-flex items-center gap-2 px-3.5 py-2 rounded-lg bg-blue-500/15 hover:bg-blue-500/25 border border-sky-400/30 text-sky-300 hover:text-white text-xs font-semibold transition-all hover:-translate-y-0.5 active:translate-y-0"
+                      >
+                        <FileCheck2 className="w-3.5 h-3.5" />
+                        {achievement.attachmentLabel}
+                      </a>
                     </div>
                   </div>
                 </GlassCard>
@@ -66,18 +73,18 @@ export function AchievementsSection() {
           })}
         </div>
 
-        {/* Leadership */}
+        {/* Leadership Experience */}
         <motion.div
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
           viewport={{ once: true }}
-          transition={{ duration: 0.5 }}
+          transition={{ duration: 0.4 }}
         >
           <div className="flex items-center gap-3 mb-8">
-            <Users className="w-6 h-6 text-blue-400" />
+            <Users className="w-6 h-6 text-sky-400" />
             <h3 className="text-2xl font-bold text-white">Leadership Experience</h3>
           </div>
-          <div className="max-w-4xl">
+          <div className="w-full">
             {leadershipExperiences.map((experience, index) => (
               <TimelineItem
                 key={experience.id}
