@@ -1,3 +1,12 @@
+// ============================================================================
+// Copyright (c) 2026 Abdurrahman Khairi. All Rights Reserved.
+// Personal Software Engineering & AI Portfolio (Khai-Portfolio).
+// Unauthorized commercial use, redistribution, or cloning is prohibited.
+// ============================================================================
+
+// Feature: Sticky Navigation Bar — Purpose: Tracks active scroll section and provides desktop and mobile anchor navigation.
+// OOP: Stateful Navigation Component — Connected To: Rendered by src/app/page.tsx, links to all section anchors.
+
 "use client";
 import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
