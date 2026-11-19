@@ -1,3 +1,12 @@
+// ============================================================================
+// Copyright (c) 2026 Abdurrahman Khairi. All Rights Reserved.
+// Personal Software Engineering & AI Portfolio (Khai-Portfolio).
+// Unauthorized commercial use, redistribution, or cloning is prohibited.
+// ============================================================================
+
+// Feature: Verified Skills Catalog — Purpose: Defines categorized programming languages, AI/ML frameworks, web stacks, and databases.
+// OOP: Typed Domain Data Model — Connected To: Consumed by SkillsSection.tsx and SkillBadge.tsx.
+
 import { SiPython, SiTypescript, SiDotnet, SiJavascript, SiCplusplus, SiPhp, SiHtml5, SiCss, SiTensorflow, SiScikitlearn, SiOpencv, SiReact, SiNextdotjs, SiTailwindcss, SiFastapi, SiNodedotjs, SiExpress, SiGo, SiPostgresql, SiMysql, SiSqlite, SiRedis, SiDocker, SiGit, SiNginx, SiFigma, SiQgis, SiKeras, SiStreamlit, SiVite } from "react-icons/si";
 import { FaJava, FaMicrosoft } from "react-icons/fa";
 import { TbBrandCSharp, TbSql } from "react-icons/tb";
