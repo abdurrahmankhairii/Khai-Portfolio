@@ -1,3 +1,12 @@
+// ============================================================================
+// Copyright (c) 2026 Abdurrahman Khairi. All Rights Reserved.
+// Personal Software Engineering & AI Portfolio (Khai-Portfolio).
+// Unauthorized commercial use, redistribution, or cloning is prohibited.
+// ============================================================================
+
+// Feature: Work & Leadership Credentials — Purpose: Provides verified professional and organizational history with working attachments.
+// OOP: Typed Domain Data Model — Connected To: Consumed by ExperienceSection.tsx, AchievementsSection.tsx, and TimelineItem.tsx.
+
 export interface Experience {
   id: string;
   company: string;
@@ -7,8 +16,8 @@ export interface Experience {
   logo: string;
   description: string[];
   type: "work" | "leadership";
-  attachment?: string;
-  attachmentLabel?: string;
+  attachment: string;
+  attachmentLabel: string;
 }
 
 export const workExperiences: Experience[] = [
@@ -16,31 +25,33 @@ export const workExperiences: Experience[] = [
     id: "mattel",
     company: "PT. Mattel Indonesia",
     role: "Full Stack - Digital Transformation Internship",
-    period: "Dec 2025 - Present",
+    period: "Dec 2025 — Present",
     location: "Bekasi, Indonesia",
     logo: "/images/experience/mattel-logo.png",
     description: [
-      "Developed and maintained internal web applications in C# and .NET backed by SQL Server, supporting the daily operations of the EHS and Compliance Assurance division with 1000+ daily active users.",
-      "Managed and optimized a digital ecosystem consisting of 20+ Web Apps and Power BI dashboards, utilizing Power Automate and Power Apps.",
-      "Responsible for the end-to-end maintenance and troubleshooting of all digital compliance projects, ensuring high availability.",
+      "Built and migrated internal web applications in C#, ASP.NET MVC, and SQL Server to replace unstable Power Apps and legacy VB.NET workflows across a 7,000+ employee manufacturing facility.",
+      "Automated audit scoring, multi-tier approval workflows, email alerts, and one-click Excel/PDF/PowerPoint exports (ClosedXML, EPPlus, OpenXML, Rotativa) for 1,000+ daily EHS and compliance users.",
+      "Maintained a portfolio of 20+ internal applications and 5 Power BI dashboards, optimizing SQL Server queries and ensuring continuous availability for plant operations.",
     ],
     type: "work",
-    attachment: "/attachments/mattel-certificate.pdf",
-    attachmentLabel: "View Certificate",
+    attachment: "/resume/Abdurrahman-Khairi-CV.pdf",
+    attachmentLabel: "View Employment Record (CV)",
   },
   {
     id: "blk-tangerang",
-    company: "Dinas Ketenagakerjaan Kota Tangerang",
+    company: "Balai Latihan Kerja (Disnaker Kota Tangerang)",
     role: "Instructor, Artificial Intelligence Training",
     period: "Nov 2025 — Dec 2025",
     location: "Tangerang, Indonesia",
     logo: "/images/education/president-university.png",
     description: [
-      "Delivered a 5-week AI training program to 15 participants spanning fresh graduates, gig workers, UMKM owners, and homemakers.",
-      "Designed and presented a curriculum covering AI fundamentals, generative AI, AI-powered business strategy, and workflow automation using n8n.",
-      "Coached participants individually to build custom AI assistants for their own workplace problems, bridging the gap between AI and practical use.",
+      "Delivered a 5-week applied AI training program to 15 participants across fresh graduates, gig workers, UMKM business owners, and homemakers with a 100% project completion rate.",
+      "Authored practical curriculum modules covering AI fundamentals, generative AI prompting, business workflow automation using n8n, and tool deployment.",
+      "Coached each participant individually to assemble working AI assistants tailored to daily workplace tasks.",
     ],
     type: "work",
+    attachment: "/resume/Abdurrahman-Khairi-CV.pdf",
+    attachmentLabel: "View Instructor Record (CV)",
   },
   {
     id: "pertamina",
@@ -50,13 +61,13 @@ export const workExperiences: Experience[] = [
     location: "Tuban, Indonesia",
     logo: "/images/experience/pertamina-logo.png",
     description: [
-      "Managed IT infrastructure including seat management (PC/Laptop), MPS, centralized storage, LAN, MPLS, and CCTV at Central Processing Area and Fields.",
-      "Maintained ICT services including IP Telephony, two-way radio, multimedia, data security (firewall, SD-WAN, proxy), and access control.",
-      "Designed an Identity and PPE Detection system using computer vision (YOLOv10m, InsightFace) to monitor worker safety compliance at Sukowati Fields.",
+      "Built PERISAI, an AIoT worker identity, SIM-L permit, and PPE verification web platform using Next.js, FastAPI, YOLOv10m, InsightFace, and PostgreSQL pgvector for Sukowati oil field gates.",
+      "Managed field IT infrastructure at the Central Processing Area and production sites, including end-user workstations, MPS, centralized storage, LAN, MPLS, and CCTV feeds.",
+      "Supported daily ICT operations across IP telephony, two-way radio, firewall, SD-WAN, proxy services, and physical gate access control.",
     ],
     type: "work",
-    attachment: "/attachments/pertamina-certificate.pdf",
-    attachmentLabel: "View Certificate",
+    attachment: "/resume/Abdurrahman-Khairi-CV.pdf",
+    attachmentLabel: "View Internship Record (CV)",
   },
   {
     id: "prc-capital",
@@ -66,12 +77,12 @@ export const workExperiences: Experience[] = [
     location: "Cikarang, Indonesia",
     logo: "/images/experience/prc-logo.png",
     description: [
-      "Analyzed 14 years of stock performance data for 7 companies using Excel, delivering actionable insights for risk assessment.",
-      "Evaluated monthly investment scenarios (1-2M IDR) to calculate dividend gains and trends, supporting strategic decision-making.",
-      "Prepared statistical content reports and documented project progress for stakeholder reviews.",
+      "Analyzed 14 years of historical equity performance across 7 listed companies in Excel to produce risk and return benchmarks.",
+      "Modeled recurring monthly investment scenarios of 1-2M IDR to evaluate dividend yield compounding and drawdown profiles.",
+      "Compiled structured statistical reports and research documentation for faculty and stakeholder reviews.",
     ],
     type: "work",
-    attachment: "/attachments/prc-capital-certificate.pdf",
+    attachment: "/images/experience/Capital%20Market%20Intern_Abdurrahman%20Khairi.png",
     attachmentLabel: "View Certificate",
   },
   {
@@ -82,27 +93,27 @@ export const workExperiences: Experience[] = [
     location: "Cikarang, Indonesia",
     logo: "/images/experience/prc-logo.png",
     description: [
-      "Designed 3D models and audio for a VR mental health meditation app using Simlab360.",
-      "Supported VR prototype development to improve mental health outcomes, focusing on operational efficiency.",
+      "Constructed 3D environments and spatial audio scenes for a virtual reality mental health meditation prototype using Simlab360.",
+      "Supported user testing iterations and asset optimization for smooth headset playback.",
     ],
     type: "work",
-    attachment: "/attachments/prc-vr-certificate.pdf",
+    attachment: "/images/experience/CERTIFICATE%20IE%20VR%20DEV_Abdurrahman%20Khairi.png",
     attachmentLabel: "View Certificate",
   },
   {
     id: "bps",
     company: "Badan Pusat Statistik (BPS)",
-    role: "GIS Specialist (Freelance)",
+    role: "GIS Specialist Intern",
     period: "Mar 2021 — Jun 2021",
     location: "Bojonegoro, Indonesia",
     logo: "/images/experience/bps-logo.png",
     description: [
-      "Digitized building points for 2020 Population Census using QGIS, ensuring data accuracy across 4 districts.",
-      "Collaborated with teams to support timely data collection and project execution.",
-      "Documented geospatial data processes clearly to meet census reporting requirements.",
+      "Digitized building coordinate points for the 2020 Population Census using QGIS across 4 districts, verifying spatial attribute accuracy.",
+      "Coordinated with field survey teams to reconcile boundary updates and meet census reporting deadlines.",
+      "Documented geospatial digitization standards and QA verification logs for district supervisors.",
     ],
     type: "work",
-    attachment: "/attachments/bps-certificate.pdf",
+    attachment: "/images/experience/Sertifikat%20BPS%20Bojonegoro%20-%20Abdurrahman%20Khairi_page-0001.jpg",
     attachmentLabel: "View Certificate",
   },
 ];
@@ -116,26 +127,29 @@ export const leadershipExperiences: Experience[] = [
     location: "Cikarang, Indonesia",
     logo: "/images/education/president-university.png",
     description: [
-      "Led 58 members across 9 divisions, overseeing 13 events and 10 work plans.",
-      "Coordinated cross-functional teams and managed event planning and execution.",
-      "Achieved 1,000+ audience members and 126,000+ social media views.",
+      "Led 58 organization members across 9 divisions, managing the delivery of 13 events and 10 annual work plans.",
+      "Directed cross-division budgeting, timeline reviews, and external partner coordination across the academic year.",
+      "Reached 1,000+ live event participants and 126,000+ social media views across association programs.",
     ],
     type: "leadership",
-    attachment: "/attachments/hima-certificate.pdf",
+    attachment: "/images/experience/Member%20PUMA.png",
     attachmentLabel: "View Certificate",
   },
   {
-    id: "hima-external",
-    company: "HIMA Informatics — President University",
-    role: "Member of External Relations",
-    period: "Nov 2023 — Sep 2024",
+    id: "cultural-festival",
+    company: "Cultural Festival — President University",
+    role: "PIC Event Organizer",
+    period: "Feb 2024 — Nov 2024",
     location: "Cikarang, Indonesia",
     logo: "/images/education/president-university.png",
     description: [
-      "Managed partnerships with external parties including media, campuses, and companies.",
-      "Coordinated IT x IS company visit with ITBCA for knowledge exchange.",
+      "Directed 105 committee members across 14 operational divisions to execute President University's annual international Cultural Festival.",
+      "Coordinated logistics, stage schedules, and vendor compliance for 200+ international performers and 1,500+ attendees.",
+      "Managed multi-month production milestones, risk contingency plans, and post-event accountability reporting.",
     ],
     type: "leadership",
+    attachment: "/resume/Abdurrahman-Khairi-CV.pdf",
+    attachmentLabel: "View Leadership Record (CV)",
   },
   {
     id: "mentor",
@@ -145,12 +159,12 @@ export const leadershipExperiences: Experience[] = [
     location: "Indonesia",
     logo: "/images/education/president-university.png",
     description: [
-      "Mentored 500 students with 19 mentors on AI applications (image/video generation, AI basics).",
-      "Achieved engagement with Indonesia's Vice President and Mr. Wisnutama at the event.",
+      "Mentored 500 students alongside 19 fellow mentors on practical AI fundamentals and image/video generation workflows.",
+      "Supported live workshop sessions attended by the Vice President of Indonesia and Mr. Wishnutama.",
     ],
     type: "leadership",
-    attachment: "/attachments/pandai-certificate.pdf",
-    attachmentLabel: "View Certificate",
+    attachment: "/resume/Abdurrahman-Khairi-CV.pdf",
+    attachmentLabel: "View Workshop Record (CV)",
   },
   {
     id: "pm-itbca",
@@ -160,12 +174,11 @@ export const leadershipExperiences: Experience[] = [
     location: "Indonesia",
     logo: "/images/education/president-university.png",
     description: [
-      "Led 34 team members to plan and execute a knowledge-sharing event with ITBCA.",
-      "Managed project timeline, risk mitigation, and stakeholder communication.",
-      "Documented meeting notes and prepared final event report for 65 participants.",
+      "Led a 34-member committee to organize an industrial study visit and engineering knowledge exchange with ITBCA.",
+      "Oversaw schedule tracking, corporate liaison correspondence, and final attendance reporting for 65 student delegates.",
     ],
     type: "leadership",
-    attachment: "/attachments/itbca-certificate.pdf",
+    attachment: "/images/experience/Member%20PUMA.png",
     attachmentLabel: "View Certificate",
   },
   {
@@ -176,11 +189,11 @@ export const leadershipExperiences: Experience[] = [
     location: "Indonesia",
     logo: "/images/education/president-university.png",
     description: [
-      "Led a 30-member team on a mangrove planting initiative, organizing youth-led climate action.",
-      "Planted 1,000 mangrove saplings across the initiative.",
-      "Documented project outcomes and facilitated community engagement.",
+      "Coordinated a 30-member volunteer team to execute coastal conservation logistics and plant 1,000 mangrove saplings.",
+      "Prepared community engagement documentation and post-project field reports.",
     ],
     type: "leadership",
+    attachment: "/resume/Abdurrahman-Khairi-CV.pdf",
+    attachmentLabel: "View Project Record (CV)",
   },
 ];
-
