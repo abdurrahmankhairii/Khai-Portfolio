@@ -1,3 +1,12 @@
+/* ============================================================================
+ * Copyright (c) 2026 Abdurrahman Khairi. All Rights Reserved.
+ * Personal Software Engineering & AI Portfolio (Khai-Portfolio).
+ * Unauthorized commercial use, redistribution, or cloning is prohibited.
+ * ============================================================================ */
+
+/* Feature: Global Design Tokens & Surfaces — Purpose: Defines deep-navy glassmorphic surfaces, blue accent gradients, and subtle micro-interactions. */
+/* OOP: Centralized Design System Stylesheet — Connected To: Imported by src/app/layout.tsx across all routes. */
+
 @import "tailwindcss";
 
 @theme {
@@ -22,55 +31,56 @@ html {
 
 body {
   font-family: var(--font-inter);
-  background: linear-gradient(135deg, #0f172a 0%, #1e293b 50%, #0f172a 100%);
+  background: linear-gradient(135deg, #0b1220 0%, #162238 50%, #0b1220 100%);
   color: #e2e8f0;
   min-height: 100vh;
   overflow-x: hidden;
 }
 
-/* Glass utilities */
+/* Glass surfaces */
 .glass {
-  background: rgba(255, 255, 255, 0.08);
+  background: rgba(255, 255, 255, 0.07);
   backdrop-filter: blur(16px);
   -webkit-backdrop-filter: blur(16px);
   border: 1px solid rgba(255, 255, 255, 0.12);
 }
 
 .glass-strong {
-  background: rgba(255, 255, 255, 0.15);
+  background: rgba(15, 23, 42, 0.72);
   backdrop-filter: blur(20px);
   -webkit-backdrop-filter: blur(20px);
-  border: 1px solid rgba(255, 255, 255, 0.2);
+  border: 1px solid rgba(148, 163, 184, 0.18);
 }
 
 .glass-card {
-  background: rgba(255, 255, 255, 0.06);
+  background: rgba(255, 255, 255, 0.055);
   backdrop-filter: blur(12px);
   -webkit-backdrop-filter: blur(12px);
   border: 1px solid rgba(255, 255, 255, 0.1);
-  transition: all 0.3s ease;
+  transition: transform 0.25s ease, border-color 0.25s ease, background-color 0.25s ease, box-shadow 0.25s ease;
 }
 
 .glass-card:hover {
-  background: rgba(255, 255, 255, 0.1);
-  border-color: rgba(96, 165, 250, 0.3);
-  box-shadow: 0 8px 32px rgba(59, 130, 246, 0.15);
+  background: rgba(255, 255, 255, 0.09);
+  border-color: rgba(56, 189, 248, 0.35);
+  box-shadow: 0 10px 30px rgba(37, 99, 235, 0.16);
   transform: translateY(-2px);
 }
 
+/* Cohesive blue-to-sky brand gradient (zero violet/lavender) */
 .text-gradient {
-  background: linear-gradient(135deg, #60a5fa, #3b82f6, #818cf8);
+  background: linear-gradient(135deg, #93c5fd, #3b82f6, #38bdf8);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
 }
 
 .glow {
-  box-shadow: 0 0 20px rgba(59, 130, 246, 0.3), 0 0 60px rgba(59, 130, 246, 0.1);
+  box-shadow: 0 0 20px rgba(59, 130, 246, 0.28), 0 0 54px rgba(14, 165, 233, 0.12);
 }
 
 .glow-text {
-  text-shadow: 0 0 20px rgba(59, 130, 246, 0.5);
+  text-shadow: 0 0 20px rgba(59, 130, 246, 0.45);
 }
 
 /* Scrollbar */
@@ -78,18 +88,18 @@ body {
   width: 6px;
 }
 ::-webkit-scrollbar-track {
-  background: rgba(15, 23, 42, 0.5);
+  background: rgba(11, 18, 32, 0.65);
 }
 ::-webkit-scrollbar-thumb {
-  background: rgba(96, 165, 250, 0.3);
+  background: rgba(96, 165, 250, 0.32);
   border-radius: 3px;
 }
 ::-webkit-scrollbar-thumb:hover {
-  background: rgba(96, 165, 250, 0.5);
+  background: rgba(96, 165, 250, 0.55);
 }
 
 /* Selection */
 ::selection {
-  background: rgba(59, 130, 246, 0.3);
-  color: #fff;
+  background: rgba(59, 130, 246, 0.32);
+  color: #ffffff;
 }
