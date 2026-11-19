@@ -1,3 +1,12 @@
+// ============================================================================
+// Copyright (c) 2026 Abdurrahman Khairi. All Rights Reserved.
+// Personal Software Engineering & AI Portfolio (Khai-Portfolio).
+// Unauthorized commercial use, redistribution, or cloning is prohibited.
+// ============================================================================
+
+// Feature: Competition Achievements Data — Purpose: Stores verified hackathon awards and real proof images.
+// OOP: Typed Domain Data Model — Connected To: Consumed by AchievementsSection.tsx.
+
 export interface Achievement {
   id: string;
   title: string;
@@ -6,31 +15,33 @@ export interface Achievement {
   description: string;
   image?: string;
   icon: "trophy" | "award" | "star";
-  attachment?: string;
-  attachmentLabel?: string;
+  attachment: string;
+  attachmentLabel: string;
 }
 
 export const achievements: Achievement[] = [
   {
     id: "beachhack",
-    title: "1st Winner — HeartLink App",
-    event: "BeachHack: Tanjung Lesung International Hackathon",
+    title: "1st Winner — HeartLink Health App",
+    event: "BeachHack International Hackathon",
     date: "November 2024",
-    description: "Won first place at an international hackathon with HeartLink, a health-focused application designed to improve community healthcare access.",
+    description:
+      "Awarded 1st place at BeachHack Tanjung Lesung International Hackathon for building HeartLink, a digital health triage and clinic-access application for regional communities.",
     image: "/images/achievements/hackathon-beachhack.jpg",
     icon: "trophy",
-    attachment: "/attachments/beachhack-certificate.pdf",
-    attachmentLabel: "View Certificate",
+    attachment: "/images/achievements/hackathon-beachhack.jpg",
+    attachmentLabel: "View Award Proof",
   },
   {
     id: "goldencode",
     title: "Best Teamwork — AI Fashion Assistant",
     event: "Golden Code International Hackathon",
     date: "May 2025",
-    description: "Awarded Best Teamwork for developing an AI-powered Fashion Assistant application at the Golden Code International Hackathon.",
+    description:
+      "Received the Best Teamwork award at Golden Code International Hackathon for delivering an AI Fashion Assistant recommendation prototype under competition deadlines.",
     image: "/images/achievements/hackathon-goldencode.jpg",
     icon: "award",
-    attachment: "/attachments/goldencode-certificate.pdf",
-    attachmentLabel: "View Certificate",
+    attachment: "/images/achievements/hackathon-goldencode.jpg",
+    attachmentLabel: "View Award Proof",
   },
 ];
