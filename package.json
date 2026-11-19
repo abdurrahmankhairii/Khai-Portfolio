@@ -1,6 +1,9 @@
 {
   "name": "khai-portfolio",
   "version": "1.0.0",
+  "description": "Personal Software Engineering & AI Portfolio of Abdurrahman Khairi",
+  "author": "Abdurrahman Khairi",
+  "license": "UNLICENSED",
   "private": true,
   "scripts": {
     "dev": "next dev",
