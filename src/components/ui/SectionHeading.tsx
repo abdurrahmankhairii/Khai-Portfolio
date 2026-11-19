@@ -1,3 +1,12 @@
+// ============================================================================
+// Copyright (c) 2026 Abdurrahman Khairi. All Rights Reserved.
+// Personal Software Engineering & AI Portfolio (Khai-Portfolio).
+// Unauthorized commercial use, redistribution, or cloning is prohibited.
+// ============================================================================
+
+// Feature: Standardized Section Heading — Purpose: Renders uniform section titles, subtitles, and sky-blue accent dividers.
+// OOP: Reusable Typography Component — Connected To: Used across About, Experience, Skills, Projects, Achievements, and Contact sections.
+
 "use client";
 import { motion } from "framer-motion";
 
@@ -21,7 +30,7 @@ export function SectionHeading({ title, subtitle, id }: SectionHeadingProps) {
       {subtitle && (
         <p className="text-lg text-slate-400 max-w-2xl mx-auto">{subtitle}</p>
       )}
-      <div className="mt-4 mx-auto w-24 h-1 rounded-full bg-gradient-to-r from-blue-400 to-indigo-400" />
+      <div className="mt-4 mx-auto w-24 h-1 rounded-full bg-gradient-to-r from-blue-400 to-sky-400" />
     </motion.div>
   );
 }
