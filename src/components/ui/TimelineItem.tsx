@@ -1,3 +1,12 @@
+// ============================================================================
+// Copyright (c) 2026 Abdurrahman Khairi. All Rights Reserved.
+// Personal Software Engineering & AI Portfolio (Khai-Portfolio).
+// Unauthorized commercial use, redistribution, or cloning is prohibited.
+// ============================================================================
+
+// Feature: Timeline Item Presentation — Purpose: Presents verified credentials and achievements.
+// OOP: Encapsulated Presentation Component — Connected To: Rendered by ExperienceSection.tsx.
+
 "use client";
 import { motion } from "framer-motion";
 import Image from "next/image";
