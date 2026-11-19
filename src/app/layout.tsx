@@ -1,3 +1,12 @@
+// ============================================================================
+// Copyright (c) 2026 Abdurrahman Khairi. All Rights Reserved.
+// Personal Software Engineering & AI Portfolio (Khai-Portfolio).
+// Unauthorized commercial use, redistribution, or cloning is prohibited.
+// ============================================================================
+
+// Feature: Root Application Shell — Purpose: Configures Inter font, SEO metadata, and global styles for the Next.js App Router.
+// OOP: Root Layout Component — Connected To: Wraps src/app/page.tsx and imports src/app/globals.css.
+
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
@@ -8,25 +17,25 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "Abdurrahman Khairi — AI Engineer & Full-Stack Developer",
+  title: "Abdurrahman Khairi — Full-Stack .NET & AI Engineer",
   description:
-    "Portfolio of Abdurrahman Khairi — AI Engineer & Full-Stack Developer specializing in computer vision, deep learning, and modern web development. President University, GPA 3.97.",
+    "Portfolio of Abdurrahman Khairi — Full-Stack .NET & AI Engineer (GPA 3.97 / 4.00, President University). 14 enterprise manufacturing web apps at PT. Mattel Indonesia and 8 AI, computer vision, and full-stack platforms.",
   keywords: [
     "Abdurrahman Khairi",
+    "Full-Stack Engineer",
+    "ASP.NET MVC",
+    "C# .NET Developer",
     "AI Engineer",
-    "Full-Stack Developer",
     "Computer Vision",
-    "Machine Learning",
-    "Portfolio",
     "Next.js",
-    "Python",
-    "React",
+    "FastAPI",
+    "SQL Server",
   ],
   authors: [{ name: "Abdurrahman Khairi" }],
   openGraph: {
-    title: "Abdurrahman Khairi — AI Engineer & Full-Stack Developer",
+    title: "Abdurrahman Khairi — Full-Stack .NET & AI Engineer",
     description:
-      "Building intelligent solutions that bridge AI and real-world impact.",
+      "Production enterprise .NET systems, computer vision safety platforms, and full-stack engineering portfolio.",
     type: "website",
     locale: "en_US",
   },
