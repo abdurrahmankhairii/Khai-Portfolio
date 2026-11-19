@@ -1,3 +1,12 @@
+// ============================================================================
+// Copyright (c) 2026 Abdurrahman Khairi. All Rights Reserved.
+// Personal Software Engineering & AI Portfolio (Khai-Portfolio).
+// Unauthorized commercial use, redistribution, or cloning is prohibited.
+// ============================================================================
+
+// Feature: Portfolio Landing Page — Purpose: Composes all verified portfolio sections from Hero through Contact and Footer.
+// OOP: Page Composition Root — Connected To: Rendered by src/app/layout.tsx across all section modules.
+
 "use client";
 
 import { Navbar } from "@/components/layout/Navbar";
