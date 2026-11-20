@@ -1,3 +1,12 @@
+// ============================================================================
+// Copyright (c) 2026 Abdurrahman Khairi. All Rights Reserved.
+// Personal Software Engineering & AI Portfolio (Khai-Portfolio).
+// Unauthorized commercial use, redistribution, or cloning is prohibited.
+// ============================================================================
+
+// Feature: Rotating Role Typewriter — Purpose: Cycles through core engineering specialties in the hero introduction.
+// OOP: Stateful Animation Component — Connected To: Rendered inside HeroSection.tsx.
+
 "use client";
 import { useState, useEffect, useCallback } from "react";
 
