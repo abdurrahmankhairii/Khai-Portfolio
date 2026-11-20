@@ -1,3 +1,12 @@
+// ============================================================================
+// Copyright (c) 2026 Abdurrahman Khairi. All Rights Reserved.
+// Personal Software Engineering & AI Portfolio (Khai-Portfolio).
+// Unauthorized commercial use, redistribution, or cloning is prohibited.
+// ============================================================================
+
+// Feature: Glassmorphic Surface Primitive — Purpose: Provides consistent translucent card variants across portfolio sections.
+// OOP: Reusable UI Wrapper Component — Connected To: Composed across AboutSection, EducationSection, AchievementsSection, and ContactSection.
+
 "use client";
 import { cn } from "@/lib/utils";
 import { motion, type HTMLMotionProps } from "framer-motion";
