@@ -1,3 +1,12 @@
+// ============================================================================
+// Copyright (c) 2026 Abdurrahman Khairi. All Rights Reserved.
+// Personal Software Engineering & AI Portfolio (Khai-Portfolio).
+// Unauthorized commercial use, redistribution, or cloning is prohibited.
+// ============================================================================
+
+// Feature: Technology Skill Pill — Purpose: Displays an individual technology icon and name inside a glassmorphic tile.
+// OOP: Stateless Presentation Component — Connected To: Rendered by SkillsSection.tsx using icons from src/data/skills.ts.
+
 "use client";
 import { motion } from "framer-motion";
 import { type IconType } from "react-icons";
