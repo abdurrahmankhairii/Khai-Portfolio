@@ -1,3 +1,12 @@
+// ============================================================================
+// Copyright (c) 2026 Abdurrahman Khairi. All Rights Reserved.
+// Personal Software Engineering & AI Portfolio (Khai-Portfolio).
+// Unauthorized commercial use, redistribution, or cloning is prohibited.
+// ============================================================================
+
+// Feature: Viewport Entrance Wrapper — Purpose: Applies subtle directional entrance motion once a section enters the viewport.
+// OOP: Higher-Order Presentation Component — Connected To: Wraps content blocks across section components.
+
 "use client";
 import { motion, type Variants } from "framer-motion";
 import { cn } from "@/lib/utils";
