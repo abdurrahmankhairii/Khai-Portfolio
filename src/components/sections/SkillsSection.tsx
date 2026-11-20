@@ -1,3 +1,12 @@
+// ============================================================================
+// Copyright (c) 2026 Abdurrahman Khairi. All Rights Reserved.
+// Personal Software Engineering & AI Portfolio (Khai-Portfolio).
+// Unauthorized commercial use, redistribution, or cloning is prohibited.
+// ============================================================================
+
+// Feature: Technical Skills Matrix — Purpose: Filters and renders verified languages, AI/ML frameworks, web stacks, and databases.
+// OOP: Stateful Container Component — Connected To: Rendered by src/app/page.tsx, consumes src/data/skills.ts and SkillBadge.tsx.
+
 "use client";
 import { useState } from "react";
 import { SectionHeading } from "@/components/ui/SectionHeading";
